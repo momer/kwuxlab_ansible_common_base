@@ -10,7 +10,7 @@
     - vars.yml
     - version.yml
   tags:
-    - kwuxlab_common_base
+    - kwuxlab_ansible_common_base
     - cubic_iso_build
   pre_tasks:
     - name: Collect facts
