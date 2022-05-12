@@ -49,7 +49,7 @@
       authorized_key:
         user: "{{ sudoer_user }}"
         state: present
-        key: "{{ local_public_key }}"
+        key: "{{ target_public_key }}"
       notify: restart ssh
 
     - name: Install base target packages

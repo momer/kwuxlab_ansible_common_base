@@ -1,8 +1,8 @@
 ---
 # Allow the local public key to authenticate to the target host
-local_public_key_filename: "id_rsa.pub"
-local_public_key_dir_path: "{{ lookup('env','HOME') + '/.ssh/' }}"
-local_public_key: "{{ lookup('file', local_public_key_dir_path + local_public_key_filename) }}"
+target_public_key_filename: "id_rsa.pub"
+target_public_key_dir_path: "{{ lookup('env','HOME') + '/.ssh/' }}"
+target_public_key: "{{ lookup('file', target_public_key_dir_path + target_public_key_filename) }}"
 
 # Host timezone configuration
 default_local_timezone: America/Chicago
