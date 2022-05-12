@@ -1,6 +1,6 @@
 ---
 # Default host path to store local facts
-ansible_local_facts_dir: "{{ ansible_local_facts_dir | default('/etc/ansible/facts.d')}}"
+ansible_local_facts_dir: "{{ ansible_local_facts_dir | default('/etc/ansible/facts.d') }}"
 
 # Allow the local public key to authenticate to the target host
 target_public_key_filename: "id_rsa.pub"
