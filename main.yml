@@ -62,9 +62,9 @@
 
     - name: Add job triggering logs rotation frequently
       cron:
-        cron_file: '/etc/crontab.d/logrotate.cron'
+        name: 'logrotate-frequently'
+        cron_file: 'logrotate-frequently.cron'
         user: 'root'
-        name: 'logrotate'
         minute: '*/2'
         job: '/etc/cron.daily/logrotate'
         state: present
